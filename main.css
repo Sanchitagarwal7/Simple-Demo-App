@@ -28,8 +28,9 @@
     left: 20px;
     height: 170px;
     width: 300px;
+
     border-radius: 5px;
-    border:2px solid #b366f9;
+    border: 5px solid rgb(203, 119, 255);
     -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
     box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
     z-index: 999;
@@ -47,14 +48,13 @@
 
 
 .control-container{
-  background-color: rgb(179, 102, 249, .9);
+  background-color: rgb(84, 0, 136);
   padding: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-right: 30px;
 }
 
 .control-container img{
@@ -63,7 +63,7 @@
 }
 
 #leave-btn{
-    background-color: rgb(255,80,80, 1);
+    background-color: rgb(151, 0, 0);
 }
 
 @media screen and (max-width:600px) {

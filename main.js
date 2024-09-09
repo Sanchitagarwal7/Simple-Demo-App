@@ -184,10 +184,12 @@ const toggleCamera = () => {
     let videoTrack = localStream.getTracks().find(track => track.kind === 'video');
     if(videoTrack.enabled===true){ //if video tracks are enabled then disable them and change color
         videoTrack.enabled = false;
-        document.getElementById('camera-btn').style.backgroundColor = 'rgb(255, 80, 80)';
+        document.getElementById('camera-btn').style.backgroundColor = 'rgb(151, 0, 0)';
+        document.getElementById('cameraIcon').src = './icons/cameraDisabled.png';
     }else{
         videoTrack.enabled = true; //if they are disabled then enable them and change color
-        document.getElementById('camera-btn').style.backgroundColor = 'rgb(179, 102, 249, .9)';
+        document.getElementById('camera-btn').style.backgroundColor = 'rgb(84, 0, 136)';
+        document.getElementById('cameraIcon').src = './icons/camera.png';
     }
 }
 
@@ -196,10 +198,12 @@ const toggleAudio = () => {
     let audioTrack = localStream.getTracks().find(track => track.kind === 'audio');
     if(audioTrack.enabled===true){ //if audio tracks are enabled then disable them and change color
         audioTrack.enabled = false;
-        document.getElementById('mic-btn').style.backgroundColor = 'rgb(255, 80, 80)';
+        document.getElementById('mic-btn').style.backgroundColor = 'rgb(151, 0, 0)';
+        document.getElementById('micIcon').src = './icons/micDisabled.png';
     }else{
         audioTrack.enabled = true; //if they are disabled then enable them and change color
-        document.getElementById('mic-btn').style.backgroundColor = 'rgb(179, 102, 249, .9)';
+        document.getElementById('mic-btn').style.backgroundColor = 'rgb(84, 0, 136)';
+        document.getElementById('micIcon').src = './icons/mic.png';
     }
 }
 

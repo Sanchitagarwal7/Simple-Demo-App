@@ -1,17 +1,25 @@
 body{
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: rgb(29, 1, 71);
+    color: aliceblue;
+}
+
+#lobby_heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 #form-container{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    background-color: #262625;
+    background-color: rgb(84, 0, 136);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: rgb(71, 105, 143) 0px 20px 30px -10px;
 }
 
 
@@ -19,7 +27,7 @@ body{
     border-radius: 10px 10px 0 0;
     padding: 30px;
     text-align: center;
-    background-color: #363739;
+    background-color: rgb(57, 3, 91);
     margin: 0;
     font-size: 18px;
     font-size: 300;
