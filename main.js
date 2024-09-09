@@ -1,5 +1,5 @@
 //Using Agora SDKs for signalling
-import { CONFIG } from './config.js'; //importing APP_ID from config
+let APP_ID = "487d20fbafc04445a658f20a51aa7173";
 
 let token = null; //token is null for testing in agora sdks for signalling
 let uid = String((Math.floor(Math.random()*1000)));
@@ -33,7 +33,7 @@ const servers = {
 //init function to initialise the backend when deployed
 const init = async () =>{
     //client will create an instance using agoraRTM
-    client = await AgoraRTM.createInstance(CONFIG.APP_ID); //APP_ID is in config.js
+    client = await AgoraRTM.createInstance(APP_ID); //APP_ID is in config.js
     await client.login({uid, token}); //then it will login
 
     //index.html?roomID=1234
